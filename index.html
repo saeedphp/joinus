@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="Content/style/style.css"/>
     <link rel="stylesheet" href="Content/style/bootstrap.css"/>
     <title>JoinUs</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="Content/style/font-awesome.min.css">
     <script src="Content/Scripts/jquery-3.2.1.min.js"></script>
     <script src="Content/Scripts/owl.carousel.min.js"></script>
     <script src="Content/Scripts/bootstrap.js"></script>
     <link rel="stylesheet" href="Content/style/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="../../Downloads/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 </head>
 
@@ -108,9 +108,6 @@
     </div>
     <!--mobile header-->
 </section>
-
-
-
 
 <section class="fix-background">
     <section class="header-banner">
@@ -567,63 +564,36 @@
             </div>
             <section class="audio">
                 <section class="voice-grid slider-two">
-                    <div class="voice slide slide-1">
-                        <video>
-                            <source src="./audio/2.mp3"/>
-                        </video>
-                        <div class="bars">
+                        <div onclick="showPlay(this,1)" class="voice slide slide-1" id="slide-1">
+                            <video id="video-1">
+                                <source src="./audio/1.mp3"/>
+                            </video>
+                            <div class="bars">
 
+                            </div>
+                            <i  class="fa fa-play"></i>
                         </div>
 
-                        <button type="button" onclick="toggleState()" class="pause-play">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                 clip-rule="evenodd">
-                                <path d="M23 12l-22 12v-24l22 12zm-21 10.315l18.912-10.315-18.912-10.315v20.63z"/>
-                            </svg>
-                            <svg width="24" height="24" style="display: none;" xmlns="http://www.w3.org/2000/svg"
-                                 fill-rule="evenodd" clip-rule="evenodd">
-                                <path d="M10 24h-6v-24h6v24zm10 0h-6v-24h6v24zm-11-23h-4v22h4v-22zm10 0h-4v22h4v-22z"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <!--<div class="voice slide slide-2">
-                        <video>
-                            <source src="./audio/1.mp3"/>
-                        </video>
-                        <div class="bars">
+                        <div onclick="showPlay(this,2)" class="voice slide slide-2" id="slide-2">
+                            <video id="video-2">
+                                <source src="./audio/2.mp3">
+                            </video>
+                            <div class="bars">
 
+                            </div>
+                            <i  class="fa fa-play"></i>
                         </div>
 
-                        <button type="button" onclick="toggleState()" class="pause-play">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                 clip-rule="evenodd">
-                                <path d="M23 12l-22 12v-24l22 12zm-21 10.315l18.912-10.315-18.912-10.315v20.63z"/>
-                            </svg>
-                            <svg width="24" height="24" style="display: none;" xmlns="http://www.w3.org/2000/svg"
-                                 fill-rule="evenodd" clip-rule="evenodd">
-                                <path d="M10 24h-6v-24h6v24zm10 0h-6v-24h6v24zm-11-23h-4v22h4v-22zm10 0h-4v22h4v-22z"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="voice slide slide-3">
-                        <video>
-                            <source src="./audio/1.mp3"/>
-                        </video>
-                        <div class="bars">
+                        <div onclick="showPlay(this,3)" class="voice slide slide-3" id="slide-3">
+                            <video id="video-3">
+                                <source src="./audio/1.mp3"/>
+                            </video>
+                            <div class="bars">
 
+                            </div>
+                            <i  class="fa fa-play"></i>
                         </div>
 
-                        <button type="button" onclick="toggleState()" class="pause-play">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                 clip-rule="evenodd">
-                                <path d="M23 12l-22 12v-24l22 12zm-21 10.315l18.912-10.315-18.912-10.315v20.63z"/>
-                            </svg>
-                            <svg width="24" height="24" style="display: none;" xmlns="http://www.w3.org/2000/svg"
-                                 fill-rule="evenodd" clip-rule="evenodd">
-                                <path d="M10 24h-6v-24h6v24zm10 0h-6v-24h6v24zm-11-23h-4v22h4v-22zm10 0h-4v22h4v-22z"/>
-                            </svg>
-                        </button>
-                    </div>-->
                 </section>
             </section>
 
@@ -801,35 +771,29 @@
 
     });
 
+    var progressbars = "";
+    var i;
+    for (i = 1; i <= 20; i++) {
+        var num = Math.floor(Math.random() * 500) + 400 + i;
+        progressbars += "<div style='animation-duration: " + num + "ms'" + " class='bar'></div>";
+    }
 
-    const activeList = document.querySelectorAll(".pause-play");
-    const videos = document.getElementsByTagName("video");
+    $(".bars").html(progressbars);
 
-    activeList.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-            activeList.forEach(f => f.puase());
-            e.target.classList.toggle("active");
-            videos.play();
-        });
-    });
 
-    var vid = document.getElementById("myVideo");
-    var vid2 = document.getElementById("video-2");
-
-    function showPlay(tag) {
-
-        var iconTag = $(tag);
+    function showPlay(tag,id) {
+        var iconTag = $('i.fa');
         var icon = iconTag.attr('class');
         if (icon === 'fa fa-play') {
             iconTag.attr('class', 'fa fa-pause');
-            vid.play();
+            document.getElementById("video-" + id).play();
+            $(tag).find('.bar').addClass('active');
         } else {
             iconTag.attr('class', 'fa fa-play');
-            vid.pause();
+            document.getElementById("video-" + id).pause();
+            $(tag).find('.bar').removeClass('active');
         }
-
     }
-
 
 </script>
 </body>
