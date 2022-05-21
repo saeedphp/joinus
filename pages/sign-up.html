@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام</title>
+    <link rel="stylesheet" href="../Content/style/style.css">
+</head>
+
+<body>
+<section class="header">
+    <button id="openMenu" onclick="openMenu()"></button>
+    <div class="Logo">
+        <a href="/">
+            <img src="../Imgs/Logo/Join-Us-Logo.png" alt="JoinUs" />
+        </a>
+    </div>
+    <div class="menu">
+        <button id="closeMenu" onclick="CloseMenu()"></button>
+        <nav>
+            <ul>
+                <li><a href="#">فروشگاه</a></li>
+                <li><a href="#">مقاالت</a></li>
+                <li><a href="#">مشاوران</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="ContactUs.html">تماس باما</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="itemMenu">
+        <div class="searchBox">
+            <a href="#"></a>
+        </div>
+        <div class="Bag">
+            <a href="#"></a>
+        </div>
+        <div class="Profile"></div>
+    </div>
+</section>
+
+<div class="auth">
+    <h1 class="title">
+        ثبت نام
+    </h1>
+    <form action="" method="post">
+        <div class="controls">
+            <label>
+                نام و نام خانوادگی
+            </label>
+            <input type="text" name="family" />
+        </div>
+        <div class="controls">
+            <label>
+                پست الکترونیکی
+            </label>
+            <input type="email" name="email" />
+        </div>
+        <div class="controls">
+            <label>
+                 شماره تلفن
+            </label>
+            <input type="number" name="tel" />
+        </div>
+        <div class="controls">
+            <label>
+                آیدی تلگرام
+            </label>
+            <input type="text" name="telegram" />
+        </div>
+        <div class="control">
+            <p>
+                <input type="checkbox" name="remember" />
+                مرا بخاطر بسپار
+            </p>
+        </div>
+        <div class="controls">
+            <label>
+                رمز عبور
+            </label>
+            <input id="password" type="password" name="password" />
+            <span onclick="showpass(this,1)" class="showPass">
+
+            </span>
+        </div>
+        <div class="controls">
+            <label>
+                تکرار رمز عبور
+            </label>
+            <input id="confirm" type="password" name="confirm_password" />
+            <span onclick="showpass(this,2)" class="showPass">
+
+            </span>
+        </div>
+
+        <div class="controls">
+            <input type="submit" value="ثبت نام" name="submit" >
+        </div>
+
+    </form>
+</div>
+
+<footer>
+    <section class="footer">
+        <div class="footer-item">
+            <div class="title">
+                <h2>ما را در شبکه های اجتماعی دنبال کنید</h2>
+            </div>
+            <div class="social">
+                <a href="#"><img src="../Imgs/Icon/youtube.png" alt=""></a>
+                <a href="#"><img src="../Imgs/Icon/insta.png" alt=""></a>
+                <a href="#"><img src="../Imgs/Icon/pintres.png" alt=""></a>
+                <a href="#"><img src="../Imgs/Icon/aparat.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="mail">
+                <h2>عضویت در خبرنامه</h2>
+                <span>اگر میخواهید از آخرین اخبار ما با خبر شوید شماره تلفن خود را وارد کنید</span>
+            </div>
+            <div class="add-mail">
+                <input type="text" placeholder="شماره ی خود را وارد کنید ؟">
+                <button>ارسال</button>
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="e-namad">
+                <img src="../Imgs/enamad.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+</footer>
+<div class="byFaramouj">
+    <p>
+        طراحی
+        <a href="https://faramouj.ir/webDesign">
+            سایت
+        </a>
+        و
+        <a href="https://faramouj.ir/seo">
+            سئو
+        </a>
+        <a href="https://faramouj.ir/">
+            فراموج
+        </a>
+    </p>
+</div>
+
+<script src="../Content/Scripts/jquery-3.2.1.min.js"></script>
+<script src="../Content/Scripts/App.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Content/style/style.css"/>
+    <link rel="stylesheet" href="Content/style/bootstrap.css"/>
+    <title>JoinUs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="Content/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="Content/Scripts/owl.carousel.min.js"></script>
+    <script src="Content/Scripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="Content/style/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../../Downloads/style.css">
+
+</head>
+
+<body>
+<section class="header desktop-header">
+    <div class="Logo">
+        <a href="/">
+            <img src="Imgs/Logo/Join-Us-Logo.png" alt="JoinUs"/>
+        </a>
+    </div>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">فروشگاه</a></li>
+                <li><a href="#">مقاالت</a></li>
+                <li><a href="#">مشاوران</a></li>
+                <li><a href="pages/about.html">درباره ما</a></li>
+                <li><a href="pages/ContactUs.html">تماس باما</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="itemMenu">
+        <div class="searchBox">
+            <form class="search-form" action="" method="post">
+                <input type="text" placeholder="جستجو">
+                <button type="submit"></button>
+            </form>
+        </div>
+        <div class="Bag">
+            <a href="pages/cart.html"></a>
+        </div>
+        <!--<div class="Profile">
+            <a href="pages/Dashboard/dashboard.html"></a>
+        </div>-->
+        <div class="Username">
+            <a href="pages/Dashboard/dashboard.html">
+                <span>
+                    <img src="Imgs/Icon/profile-circle.png" alt="profile">
+                </span>
+                پروفایل
+            </a>
+        </div>
+        <!--<div class="logout">
+            <a href="#"></a>
+        </div>-->
+    </div>
+</section>
+
+<section class="header res-head">
+    <!--mobile header-->
+    <div class="mobile-header">
+        <div class="logo">
+             <span>
+                 <img src="Imgs/Logo/Join-Us-Logo.png" alt="logo">
+             </span>
+            <a href="pages/Dashboard/dashboard.html">
+                 <span>
+                     <img src="Imgs/Icon/profile-circle.png" alt="profile">
+                 </span>
+                پروفایل
+            </a>
+        </div>
+        <div class="search-responsive">
+            <div class="searchBox">
+                <form class="search-form" action="" method="post">
+                    <input type="text" placeholder="جستجو">
+                    <button type="submit"></button>
+                </form>
+            </div>
+        </div>
+        <div id="fix-row" class="menu-responsive">
+            <button id="openMenu" onclick="openMenu()"></button>
+            <div class="menu menuRes">
+                <button id="closeMenu" onclick="CloseMenu()"></button>
+                <nav>
+                    <ul>
+                        <li><a href="#">فروشگاه</a></li>
+                        <li><a href="#">مقاالت</a></li>
+                        <li><a href="#">مشاوران</a></li>
+                        <li><a href="pages/about.html">درباره ما</a></li>
+                        <li><a href="pages/ContactUs.html">تماس باما</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Bag">
+                <a href="pages/cart.html"></a>
+            </div>
+        </div>
+    </div>
+    <!--mobile header-->
+</section>
+
+
+
+
+<section class="fix-background">
+    <section class="header-banner">
+        <div class="PurpleBackground"></div>
+        <section class="Banner-HomePage">
+            <div class="Slide-1">
+                <div class="description-banner">
+                    <h2>لورم ایپسوم متن ساختگی با تولید سادگی</h2>
+                    <p>
+                        ال زم است، و برلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                        صنعت چاپ، و با استفاده از شرایط فعلی تکنولوژی مورد نیاز، و
+                        کاربردهای متنوع با هدف بهبود کاربردهای متنوع با هدف بهبود
+                    </p>
+                    <a href="#"> مشاهده همه دوره ها </a>
+                </div>
+                <div class="iranHuman">
+                    <img src="Imgs/BannerHomePage/iranHuman.png" alt=""/>
+                </div>
+            </div>
+        </section>
+
+    </section>
+</section>
+
+<section class="homePage-body">
+    <section class="category-HomePage">
+        <div class="category-grid">
+            <div class="category-item">
+                <div class="icon-item">
+                    <img class="svg" src="Imgs/category/consultant.png" alt="consuntant">
+                </div>
+                <div class="title">
+                    <h2>مشاوران</h2>
+                </div>
+                <div class="description">
+                    <p>
+                        توضیحات کامل شامل جامع کافلراجع به محصول شماره یک توضیحاتکامل
+                        شامل جامع کافل راجع به محصولشماره یک
+                    </p>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="icon-item">
+                    <img class="svg" src="Imgs/category/medical.png" alt="medical"/>
+                </div>
+                <div class="title">
+                    <h2>داروسازی</h2>
+                </div>
+                <div class="description">
+                    <p>
+                        توضیحات کامل شامل جامع کافلراجع به محصول شماره یک توضیحاتکامل
+                        شامل جامع کافل راجع به محصولشماره یک
+                    </p>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="icon-item">
+                    <img class="svg" src="Imgs/category/medical.png" alt="medical"/>
+                </div>
+                <div class="title">
+                    <h2>پزشکی</h2>
+                </div>
+                <div class="description">
+                    <p>
+                        توضیحات کامل شامل جامع کافلراجع به محصول شماره یک توضیحاتکامل
+                        شامل جامع کافل راجع به محصولشماره یک
+                    </p>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="icon-item">
+                    <img class="svg" src="Imgs/category/imat.png" alt="medical"/>
+                </div>
+                <div class="title">
+                    <h2>imat 2022</h2>
+                </div>
+                <div class="description">
+                    <p>
+                        توضیحات کامل شامل جامع کافلراجع به محصول شماره یک توضیحاتکامل
+                        شامل جامع کافل راجع به محصولشماره یک
+                    </p>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="icon-item">
+                    <img class="svg" src="Imgs/category/medical.png" alt="medical"/>
+                </div>
+                <div class="title">
+                    <h2>پزشکی</h2>
+                </div>
+                <div class="description">
+                    <p>
+                        توضیحات کامل شامل جامع کافلراجع به محصول شماره یک توضیحاتکامل
+                        شامل جامع کافل راجع به محصولشماره یک
+                    </p>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="icon-item">
+                    <img class="svg" src="Imgs/category/medical.png" alt="medical"/>
+                </div>
+                <div class="title">
+                    <h2>پزشکی</h2>
+                </div>
+                <div class="description">
+                    <p>
+                        توضیحات کامل شامل جامع کافلراجع به محصول شماره یک توضیحاتکامل
+                        شامل جامع کافل راجع به محصولشماره یک
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="description-category">
+            <h2>دسته بندی</h2>
+            <p>
+                ال زم است، و برلورم ایپسوم متن ساختگی با تولید سادگی ن امفهوم از
+                صنعت چاپ، و با استفاده از شرایط فعلی تکنولوژی م ورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی م ی باشطراحان گرافیک
+                است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+            </p>
+        </div>
+    </section>
+
+    <section class="videos">
+        <div class="text-video">
+            <div class="title">
+                <h2>ویدیو های ما</h2>
+            </div>
+            <div class="description">
+                <p>
+                    ال زم است، و برلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از ص
+                    نعت چاپ، و با استفاده از شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای م تنوع با هدف بهبود ابزارهای کاربردی می باشطراحان گرافیک
+                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                </p>
+            </div>
+            <a href="#" class="see-more">مشاهده همه</a>
+        </div>
+        <div class="video-player">
+            <img src="Imgs/Video/CoverVideo.png" alt=""/>
+            <button class="See-video" onclick="lightbox_open()" id="play"></button>
+        </div>
+        <div id="light">
+            <div class="orginal-video">
+                <a class="boxclose" id="boxclose" onclick="lightbox_close();" href="#play"></a>
+                <video id="VisaChipCardVideo" width="600" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <!--Browser does not support <video> tag -->
+                </video>
+            </div>
+        </div>
+
+        <div id="fade" onClick="lightbox_close();"></div>
+
+    </section>
+
+    <div class="content-widget-amazing">
+        <section id="amazing-slider" class="carousel slide carousel-fade card" data-ride="carousel">
+            <div class="row m-0">
+                <ol class="carousel-indicators pr-0 d-flex flex-column col-lg-6">
+                    <li class="open active">
+                        <div class="list">
+                            <span>
+                                <img src="Imgs/Products/product-2.jpg" alt="image">
+                            </span>
+                            <div data-target="#amazing-slider" data-slide-to="0" class="list__info">
+                                <h2>
+                                    VIP PHARMACY 2020
+                                </h2>
+                                <p>
+                                    هزینه پرداخت 150,000 تومان
+                                </p>
+                            </div>
+                            <a class="view-course" href="https://faramouj.ir">
+                                مشاهده دوره
+                            </a>
+                        </div>
+                    </li>
+                    <li class="open">
+                        <div class="list">
+                            <span>
+                                <img src="Imgs/Products/product-2.jpg" alt="image">
+                            </span>
+                            <div data-target="#amazing-slider" data-slide-to="1" class="list__info">
+                                <h2>
+                                    VIP PHARMACY 2020
+                                </h2>
+                                <p>
+                                    هزینه پرداخت 150,000 تومان
+                                </p>
+                            </div>
+                            <a class="view-course" href="https://faramouj.ir">
+                                مشاهده دوره
+                            </a>
+                        </div>
+                    </li>
+                    <li class="open">
+                        <div class="list">
+                            <span>
+                                <img src="Imgs/Products/product-2.jpg" alt="image">
+                            </span>
+                            <div data-target="#amazing-slider" data-slide-to="2" class="list__info">
+                                <h2>
+                                    VIP PHARMACY 2020
+                                </h2>
+                                <p>
+                                    هزینه پرداخت 150,000 تومان
+                                </p>
+                            </div>
+                            <a class="view-course" href="https://faramouj.ir">
+                                مشاهده دوره
+                            </a>
+                        </div>
+                    </li>
+                    <li class="open">
+                        <div class="list">
+                            <span>
+                                <img src="Imgs/Products/product-2.jpg" alt="image">
+                            </span>
+                            <div data-target="#amazing-slider" data-slide-to="3" class="list__info">
+                                <h2>
+                                    VIP PHARMACY 2020
+                                </h2>
+                                <p>
+                                    هزینه پرداخت 150,000 تومان
+                                </p>
+                            </div>
+                            <a class="view-course" href="https://faramouj.ir">
+                                مشاهده دوره
+                            </a>
+                        </div>
+                    </li>
+                    <!--<li class="active" data-target="#amazing-slider" data-slide-to="1">
+                        <span>محصول شماره 2</span>
+                    </li>
+                    <li class="" data-target="#amazing-slider" data-slide-to="2">
+                        <span>محصول شماره 3</span>
+                    </li>
+                    <li class="" data-target="#amazing-slider" data-slide-to="3">
+                        <span>محصول شماره 4</span>
+                    </li>-->
+                </ol>
+                <div class="carousel-inner p-0 col-12 col-lg-6">
+
+
+                    <div class="carousel-item active">
+                        <div class="col-12 infoBox">
+                            <h2 class="product-title">
+                                <a href="#">
+                                    VIP PHARMACY 2020
+                                </a>
+                            </h2>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                            </p>
+                            <a class="link" href="">
+                                مشاهده نمونه نت
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="col-12 infoBox">
+                            <h2 class="product-title">
+                                <a href="#">
+                                    VIP PHARMACY 2020
+                                </a>
+                            </h2>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                            </p>
+                            <a class="link" href="">
+                                مشاهده نمونه نت
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="col-12 infoBox">
+                            <h2 class="product-title">
+                                <a href="#">
+                                    VIP PHARMACY 2020
+                                </a>
+                            </h2>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                            </p>
+                            <a class="link" href="">
+                                مشاهده نمونه نت
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="col-12 infoBox">
+                            <h2 class="product-title">
+                                <a href="#">
+                                    VIP PHARMACY 2020
+                                </a>
+                            </h2>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                            </p>
+                            <a class="link" href="">
+                                مشاهده نمونه نت
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--<section class="products">
+        <div class="title">
+            <h2>نمونه محصولات</h2>
+        </div>
+        <div class="products-description">
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="img-product">
+                        <img src="Imgs/Products/ImgProduct.png" alt=""/>
+                    </div>
+                    <div class="info-product">
+                        <div class="title-product">VIP PHARMACY 2020</div>
+                        <div class="product-price">
+                            <span>هزینه ی پرداختی</span>
+                            <span class="price-numb"> 150,000 تومان </span>
+                        </div>
+                        <div class="description">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                            کاربردی می باشدڑ
+                        </div>
+                        <div class="see-more">
+                            <a href="#">مشاهده دوره</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="img-product">
+                        <img src="Imgs/Products/ImgProduct.png" alt=""/>
+                    </div>
+                    <div class="info-product">
+                        <div class="title-product">VIP PHARMACY 2019</div>
+                        <div class="product-price">
+                            <span>هزینه ی پرداختی</span>
+                            <span class="price-numb"> 150,000 تومان </span>
+                        </div>
+                        <div class="description">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                            کاربردی می باشد۲۲۲۲۲۲
+                        </div>
+                        <div class="see-more">
+                            <a href="#">مشاهده دوره</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="img-product">
+                        <img src="Imgs/Products/ImgProduct.png" alt=""/>
+                    </div>
+                    <div class="info-product">
+                        <div class="title-product">VIP PHARMACY 2018</div>
+                        <div class="product-price">
+                            <span>هزینه ی پرداختی</span>
+                            <span class="price-numb"> 150,000 تومان </span>
+                        </div>
+                        <div class="description">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                            کاربردی می باشد۳۳۳۳۳۳
+                        </div>
+                        <div class="see-more">
+                            <a href="#">مشاهده دوره</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="img-product">
+                        <img src="Imgs/Products/ImgProduct.png" alt=""/>
+                    </div>
+                    <div class="info-product">
+                        <div class="title-product">VIP PHARMACY 2017</div>
+                        <div class="product-price">
+                            <span>هزینه ی پرداختی</span>
+                            <span class="price-numb"> 150,000 تومان </span>
+                        </div>
+                        <div class="description">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                            مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                            کاربردی می باشد۴۴۴۴
+                        </div>
+                        <div class="see-more">
+                            <a href="#">مشاهده دوره</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-full">
+                <h2 class="descriptionTitle">VIP PHARMACY 2022</h2>
+                <div class="item-p" id="product-description">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+                    ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                </div>
+                <a href="See-more">مشاهده نمونه نت</a>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="Students">
+        <div class="title">
+            <h2>دانشجویان ما</h2>
+        </div>
+
+        <div class="audio-Students">
+            <!-- <button class="right next nextBtn slide-next">click</button> -->
+            <!-- <button class="left prev prevBtn slide-prev" style="float: left;">click</button> -->
+            <div class="user user-1">
+                <img src="Imgs/students/student1.png" alt=""/>
+            </div>
+            <div class="user user-2">
+                <img src="Imgs/students/student2.png" alt=""/>
+            </div>
+            <div class="user user-3">
+                <img src="Imgs/students/student3.png" alt=""/>
+            </div>
+            <div class="user user-4">
+                <img src="Imgs/students/student4.png" alt=""/>
+            </div>
+            <section class="audio">
+                <section class="voice-grid slider-two">
+                    <div class="voice slide slide-1">
+                        <video>
+                            <source src="./audio/2.mp3"/>
+                        </video>
+                        <div class="bars">
+
+                        </div>
+
+                        <button type="button" onclick="toggleState()" class="pause-play">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                 clip-rule="evenodd">
+                                <path d="M23 12l-22 12v-24l22 12zm-21 10.315l18.912-10.315-18.912-10.315v20.63z"/>
+                            </svg>
+                            <svg width="24" height="24" style="display: none;" xmlns="http://www.w3.org/2000/svg"
+                                 fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M10 24h-6v-24h6v24zm10 0h-6v-24h6v24zm-11-23h-4v22h4v-22zm10 0h-4v22h4v-22z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <!--<div class="voice slide slide-2">
+                        <video>
+                            <source src="./audio/1.mp3"/>
+                        </video>
+                        <div class="bars">
+
+                        </div>
+
+                        <button type="button" onclick="toggleState()" class="pause-play">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                 clip-rule="evenodd">
+                                <path d="M23 12l-22 12v-24l22 12zm-21 10.315l18.912-10.315-18.912-10.315v20.63z"/>
+                            </svg>
+                            <svg width="24" height="24" style="display: none;" xmlns="http://www.w3.org/2000/svg"
+                                 fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M10 24h-6v-24h6v24zm10 0h-6v-24h6v24zm-11-23h-4v22h4v-22zm10 0h-4v22h4v-22z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="voice slide slide-3">
+                        <video>
+                            <source src="./audio/1.mp3"/>
+                        </video>
+                        <div class="bars">
+
+                        </div>
+
+                        <button type="button" onclick="toggleState()" class="pause-play">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                 clip-rule="evenodd">
+                                <path d="M23 12l-22 12v-24l22 12zm-21 10.315l18.912-10.315-18.912-10.315v20.63z"/>
+                            </svg>
+                            <svg width="24" height="24" style="display: none;" xmlns="http://www.w3.org/2000/svg"
+                                 fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M10 24h-6v-24h6v24zm10 0h-6v-24h6v24zm-11-23h-4v22h4v-22zm10 0h-4v22h4v-22z"/>
+                            </svg>
+                        </button>
+                    </div>-->
+                </section>
+            </section>
+
+
+            <div class="user user-5">
+                <img src="Imgs/students/student5.png" alt=""/>
+            </div>
+            <div class="user user-6">
+                <img src="Imgs/students/student6.png" alt=""/>
+            </div>
+            <div class="user user-7">
+                <img src="Imgs/students/student8.png" alt=""/>
+            </div>
+            <div class="user user-8">
+                <img src="Imgs/students/student7.png" alt=""/>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="blog-homePage">
+        <div class="title">
+            <h2>بلاگ</h2>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-item">
+                <div class="img-blog">
+                    <img src="Imgs/blog-index.jpg" alt=""/>
+                </div>
+                <div class="blog-date">
+                    <span class="day-date">12</span>
+                    <span class="month-date">اسفند</span>
+                    <span class="year-date">1400</span>
+                </div>
+                <div class="description">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است
+                    </p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <div class="img-blog">
+                    <img src="Imgs/blog-index.jpg" alt=""/>
+                </div>
+                <div class="blog-date">
+                    <span class="day-date">12</span>
+                    <span class="month-date">اسفند</span>
+                    <span class="year-date">1400</span>
+                </div>
+                <div class="description">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است
+                    </p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <div class="img-blog">
+                    <img src="Imgs/blog-index.jpg" alt=""/>
+                </div>
+                <div class="blog-date">
+                    <span class="day-date">12</span>
+                    <span class="month-date">اسفند</span>
+                    <span class="year-date">1400</span>
+                </div>
+                <div class="description">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="see-all">
+            <a href="#">مشاهده همه</a>
+        </div>
+    </section>
+
+    <section class="support-team">
+        <div class="title">مشاوران</div>
+        <div class="support-grid">
+            <div class="support">
+                <div class="profile-support"><img src="Imgs/support/1.png" alt=""></div>
+                <div class="name-support"><span>علیرضا احمدی</span></div>
+                <div class="grade"><span>ارشد فیزیک</span></div>
+            </div>
+            <div class="support">
+                <div class="profile-support"><img src="Imgs/support/2.png" alt=""></div>
+                <div class="name-support"><span>سامان نظری</span></div>
+                <div class="grade"><span>ارشد شیمی</span></div>
+            </div>
+            <div class="support">
+                <div class="profile-support"><img src="Imgs/support/3.png" alt=""></div>
+                <div class="name-support"><span>مهران امیری</span></div>
+                <div class="grade"><span>ارشد داروسازی</span></div>
+            </div>
+        </div>
+    </section>
+</section>
+</section>
+
+<footer>
+    <section class="footer">
+        <div class="footer-item">
+            <div class="title">
+                <h2>ما را در شبکه های اجتماعی دنبال کنید</h2>
+            </div>
+            <div class="social">
+                <a href="#"><img src="Imgs/Icon/youtube.png" alt=""></a>
+                <a href="#"><img src="Imgs/Icon/insta.png" alt=""></a>
+                <a href="#"><img src="Imgs/Icon/pintres.png" alt=""></a>
+                <a href="#"><img src="Imgs/Icon/aparat.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="mail">
+                <h2>عضویت در خبرنامه</h2>
+                <span>اگر میخواهید از آخرین اخبار ما با خبر شوید شماره تلفن خود را وارد کنید</span>
+            </div>
+            <div class="add-mail">
+                <input type="text" placeholder="شماره ی خود را وارد کنید ؟">
+                <button>ارسال</button>
+            </div>
+        </div>
+        <div class="footer-item">
+            <div class="e-namad">
+                <img src="./Imgs/enamad.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+</footer>
+<div class="byFaramouj">
+    <p>
+        طراحی
+        <a href="https://faramouj.ir/webDesign">
+            سایت
+        </a>
+        و
+        <a href="https://faramouj.ir/seo">
+            سئو
+        </a>
+        <a href="https://faramouj.ir/">
+            فراموج
+        </a>
+    </p>
+</div>
+
+<script src="Content/Scripts/App.js"></script>
+<script src="Content/Scripts/video.js"></script>
+<script>
+    $(document).ready(function () {
+        // slider two
+        $('.slider-two').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // autoplay: true,
+            fade: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            // arrows: true
+        });
+
+        $('.slide-prev').click(function (e) {
+            //e.preventDefault(); 
+            $('.slider-two').slick('slickPrev');
+        });
+
+        $('.slide-next').click(function (e) {
+            //e.preventDefault(); 
+            $('.slider-two').slick('slickNext');
+        });
+
+    });
+
+
+    const activeList = document.querySelectorAll(".pause-play");
+    const videos = document.getElementsByTagName("video");
+
+    activeList.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            activeList.forEach(f => f.puase());
+            e.target.classList.toggle("active");
+            videos.play();
+        });
+    });
+
+    var vid = document.getElementById("myVideo");
+    var vid2 = document.getElementById("video-2");
+
+    function showPlay(tag) {
+
+        var iconTag = $(tag);
+        var icon = iconTag.attr('class');
+        if (icon === 'fa fa-play') {
+            iconTag.attr('class', 'fa fa-pause');
+            vid.play();
+        } else {
+            iconTag.attr('class', 'fa fa-play');
+            vid.pause();
+        }
+
+    }
+
+
+</script>
+</body>
+
+</html>
