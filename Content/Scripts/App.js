@@ -20,7 +20,7 @@ for (var i = 0; i < productItems.length; i++) {
 }
 
 // // const text = props.text
-let playing = false;
+/*let playing = false;
 const toggleState = () => {
   // console.log("last playing state was: ", playing);
   if (playing) {
@@ -30,15 +30,15 @@ const toggleState = () => {
   }
   playing = !playing;
   // console.log("current playing state is: ", playing);
-};
+};*/
 
-const myInterval = setInterval(() => {
+/*const myInterval = setInterval(() => {
   const bars = document.querySelectorAll(".bar");
   if (playing)
     for (let bar of bars) {
       bar.style.maxHeight = ((Math.random() * 1000) % 7).toString() + "rem";
     }
-}, 1000);
+}, 1000);*/
 
 addEventListener('click', click = () => {
 });
