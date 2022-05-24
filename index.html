@@ -597,7 +597,6 @@
                 </section>
             </section>
 
-
             <div class="user user-5">
                 <img src="Imgs/students/student5.png" alt=""/>
             </div>
@@ -771,6 +770,11 @@
 
     });
 
+
+
+
+    /*show animated bars when voice plays*/
+
     var progressbars = "";
     var i;
     for (i = 1; i <= 20; i++) {
@@ -780,20 +784,7 @@
 
     $(".bars").html(progressbars);
 
-
-    function showPlay(tag,id) {
-        var iconTag = $('i.fa');
-        var icon = iconTag.attr('class');
-        if (icon === 'fa fa-play') {
-            iconTag.attr('class', 'fa fa-pause');
-            document.getElementById("video-" + id).play();
-            $(tag).find('.bar').addClass('active');
-        } else {
-            iconTag.attr('class', 'fa fa-play');
-            document.getElementById("video-" + id).pause();
-            $(tag).find('.bar').removeClass('active');
-        }
-    }
+    /*show animated bars when voice plays*/
 
 </script>
 </body>

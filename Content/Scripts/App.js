@@ -115,11 +115,26 @@ function showpass(tag,id) {
   }
 
 }
-
 /*show password of input type password*/
 
 
-// const voiceGrid = [...document.querySelectorAll('.audio')];
+
+/*play voice*/
+function showPlay(tag,id) {
+  var iconTag = $('i.fa');
+  var icon = iconTag.attr('class');
+  if (icon === 'fa fa-play') {
+    iconTag.attr('class', 'fa fa-pause');
+    document.getElementById("video-" + id).play();
+    $(tag).find('.bar').addClass('active');
+  } else {
+    iconTag.attr('class', 'fa fa-play');
+    document.getElementById("video-" + id).pause();
+    $(tag).find('.bar').removeClass('active');
+  }
+}
+/*play voice*/
+
 
 // const nextBtn = [...document.querySelectorAll('.nextBtn')];
 // const prevBtn = [...document.querySelectorAll('.prevBtn')];

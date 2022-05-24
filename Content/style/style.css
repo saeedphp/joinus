@@ -2555,6 +2555,18 @@ footer .footer .footer-item .add-mail button {
     margin: 10px;
 }
 
+.pageBody-contactUs .contactUs .info-form form select {
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    border-radius: 0.4rem;
+    width: 45% !important;
+    display: inline-block;
+    margin: 10px;
+    font-family: 'IRANYEKAN';
+}
+
+
+
 .pageBody-contactUs .contactUs .info-form form input::placeholder {
     color: #525252;
 }
@@ -4390,6 +4402,8 @@ footer .footer .footer-item .add-mail button {
         width: 100% !important;
     }
 
+
+
     .pageBody-abouUs .aboutUs-box .about-boxs {
         padding: 2rem;
     }
@@ -4805,6 +4819,9 @@ footer .footer .footer-item .add-mail button {
 }
 
 @media (max-width: 768px) {
+    .pageBody-contactUs .contactUs .info-form form select{
+        width: 100% !important;
+    }
     .homePage-body .blog-homePage .blog-grid {
         flex-direction: column;
         padding: 0 1rem;
