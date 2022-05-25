@@ -191,7 +191,7 @@
 
 .view-course {
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 2rem;
     right: auto;
     left: 5rem;
     z-index: 999;
@@ -1349,13 +1349,15 @@ Logo a {
     transform: scale(.7);
 }
 
-.course__page .panel .panel__wrapper nav ul li a span.submenu {
+.course__page .panel .panel__wrapper nav ul li span.submenu {
     position: absolute;
     background: url(../../Imgs/down-arrow.png) no-repeat;
     width: 24px;
     height: 24px;
     left: 0;
     transform: scale(.7);
+    top: 0;
+    cursor: pointer;
 }
 
 .course__page .panel .panel__wrapper nav ul li a span.subcat {
@@ -1615,7 +1617,6 @@ Logo a {
 }
 
 .header .itemMenu .Username > a {
-    width: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5772,5 +5773,18 @@ footer .footer .footer-item .add-mail button {
     }
 }
 
+.login-register {
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px;
+}
 
+.pageBody-category .category-grid .category-item h2 {
+    width: 100%
+}
+
+.content-widget-amazing #amazing-slider .carousel-indicators li span {
+    width: 100%;
+    background: #fff
+}
 /*# sourceMappingURL=style.css.map */

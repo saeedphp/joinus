@@ -136,12 +136,12 @@
                 <nav>
                     <ul>
                         <li class="sub-menu">
-                            <a href="#">
+                            <a href="http://faramouj.ir">
                                 Biology
-                                <span class="submenu">
+                            </a>
+                            <span onclick="openTab()" class="submenu">
 
                             </span>
-                            </a>
                             <ul>
                                 <li  class="submenu-active">
                                     menu item one
@@ -191,9 +191,12 @@
             /*side panel drop down menu*/
 
             $('.sub-menu ul').hide();
-            $(".sub-menu a").click(function () {
+            function openTab(){
+                $(".sub-menu a").parent(".sub-menu").children("ul").slideToggle("100");
+            };
+            /*$(".sub-menu a").click(function () {
                 $(this).parent(".sub-menu").children("ul").slideToggle("100");
-            });
+            });*/
 
             /*side panel drop down menu*/
         </script>
